@@ -1,0 +1,36 @@
+Program:	Project 3
+Course:		COP 4620 - Construction of Language Translators
+Student:	Austin Green
+Instructor:	Dr. Roger Eggen
+Date Due:	11/29/2018
+Submitted:	11/29/2018
+
+CONTENTS:
+1.0	-	Design
+2.0	-	How to Run
+3.0	-	Files
+4.0	-	Notes
+
+
+1.0	-	Design
+1.1	-	Overview
+The parser uses an LL(1) recursuve decent design with integrated semantic checks to ACCEPT or REJECT the syntax/semantics of C- programs. The ACCEPT and REJECT messages have been supressed to freely allow for Intermediate Code Generation in a 4 tuple format.
+
+
+2.0	-	How to Run
+2.1	-	Command Line Execution
+Type the following command into the command line and press enter:
+$	./p4 testfile.txt
+"testfile.txt" is a text file containing a program which intermediate code will be generated from.
+
+
+3.0	-	Files
+3.1	-	Files Created
+No files are created by the program durring execution
+
+3.2	-	Files Consumed
+One text file is passed to the program for semantic analysis.
+
+
+4.0	-	Notes
+No special notes...

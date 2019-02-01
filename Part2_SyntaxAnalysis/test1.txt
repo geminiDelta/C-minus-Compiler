@@ -1,0 +1,7 @@
+/* gd _t5 */
+int main(int b)
+{
+
+    x(a,b,c);
+
+}

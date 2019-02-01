@@ -1,0 +1,59 @@
+int add(int x, int y) {
+    return (x + y);
+}
+
+void testvoid(void) {
+
+}
+
+/*void testvoid(void) { // REJECT: void returns int
+    return 5;
+}*/
+
+/*void testvoid(void) { // REJECT: void function returning expression
+    return testvoid();
+}*/
+
+/*int retcontest(void) { // REJECT: return type conflict
+    return 5.0;
+}*/
+
+/*float noreturn(void) { // REJECT: float function w/ no return
+
+}*/
+
+int arrparams(int ar[], int arr[]) {
+    return ar[0] + arr[0];
+}
+
+/*int retarr(int arr[]) { // REJECT: returning array object instead of value
+    return arr;
+}*/
+
+void main(void) {
+    int arr[5];
+    // void v; // REJECT: void type in var-declaration
+    int x;
+    int a;
+    // x = arr; // REJECT: variable arr declared as array, used as value
+    testvoid();
+    // arrparams(arr[1],arr[2]); // REJECT: int args passed to int[] params
+    // x = arr[add(5,1.0)]; // REJECT: float arg passed to int param
+    // add(1,2,3); // REJECT: arg count != to param count
+    // x = testvoid(); // REJECT: storing void in int var
+    a = x + 5 * (arr[2] / add(arr[4], 0));
+    a = add(add(1,2), add(3,4));
+    if(a > 5) {
+        float a;
+        float testvoid;
+        // testvoid(); // REJECT testvoid function overridden in scope
+    }
+    testvoid();
+}
+
+/*void main(void) { // REJECT: second main
+    int m;
+    int n;
+    n = 1;
+    m = n;
+}*/

@@ -1,0 +1,37 @@
+Program:	Project 1
+Course:		COP 4620 - Construction of Language Translators
+Student:	Austin Green
+Instructor:	Dr. Roger Eggen
+Date Due:	9/06/2018
+Submitted:	9/04/2018
+
+CONTENTS:
+1.0	-	Design
+2.0	-	How to Run
+3.0	-	Files
+4.0	-	Notes
+
+
+1.0	-	Design
+1.1	-	Overview
+The lexical analyzer uses a flagging system for flow control. There is a dictionairy of flags for letters, numbers, symbols, whitespace, and for errors. Starting with the first line, the analyzer reads a character and decides which type of flag it should raise. The active flag designates a path to be taken to derive the next token based on the subsequent characters. The active flag is then lowered and another is raised based on the next character.
+1.2	-	Example
+
+
+2.0	-	How to Run
+2.1	-	Command Line Execution
+Type the following command (following the "$") into the command line and press enter:
+$	./p1 testfile.txt
+"testfile.txt" is a text file containing a program to be lexically analyzed
+
+
+3.0	-	Files
+3.1	-	Files Created
+No files are created by the program durring execution
+
+3.2	-	Files Consumed
+One text file is passed to the program for lexical analysis.
+
+
+4.0	-	Notes
+No special notes...

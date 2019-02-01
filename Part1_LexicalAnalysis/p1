@@ -1,0 +1,2 @@
+#!/bin/ksh
+python lexical_analyzer.py $1

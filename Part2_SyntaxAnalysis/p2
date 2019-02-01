@@ -1,0 +1,2 @@
+#!/bin/ksh
+python parser.py $1

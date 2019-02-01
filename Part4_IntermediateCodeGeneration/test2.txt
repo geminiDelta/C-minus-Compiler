@@ -1,0 +1,37 @@
+int sub(int z)
+{
+	int x;
+	int y;
+	if (x > y)
+		return(z+z);
+	else 
+		x = 5;
+}
+void main(void)
+{
+	int x;
+	int y;
+	y = sub(x);
+}
+
+/*
+
+1    func       sub            int            1
+2    param                                    z
+3    alloc      4                             z
+5    compr      x              y              t23
+6    brle       t23                           10   bpe = 6
+7    add        z              z              _t0
+8    return                                   _t0
+9    br                                       11   bpo = 9
+10   assgn                     5               x   val for bpe
+11   end        func           sub                 val for bpo
+12   func       main           void           0
+13   alloc      4                             x
+14   alloc      4                             y
+15   arg                                      x              
+16   call       sub            1             _t1
+17   assign     _t1                           y
+18   end        func           main
+
+*/

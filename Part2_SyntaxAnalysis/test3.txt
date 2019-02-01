@@ -1,0 +1,32 @@
+int global;
+int glob;
+int ball;
+
+void func(int thing, int thong){
+    float moat[1];
+    moat[1] = thing * thong;
+}
+
+int main(void)
+{
+    float f;
+    int this;
+    int that;
+    int stuff[1];
+
+    global = glob + ball;
+
+   // printf() displays the string inside quotation
+   printf(string);
+    if(stuff){
+       if(this != that){
+            this = this + that * 1;
+       } else {
+            that = that * this / 0;
+       }
+    } else {
+        stuff = 1.0 + 2.0;
+    }
+
+   return 0;
+}

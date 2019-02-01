@@ -1,0 +1,2 @@
+#!/bin/ksh
+python semantic_analyzer.py $1
